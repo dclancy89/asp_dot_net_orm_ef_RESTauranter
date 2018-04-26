@@ -1,0 +1,4 @@
+/*Write all of your CSS here*/
+label, input[type="submit"] {
+    display: block;
+}

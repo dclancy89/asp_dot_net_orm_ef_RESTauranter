@@ -1,0 +1,31 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model RESTauranter.Models.Review
+
+<form asp-controller="Home" asp-action="Process" method="post">
+
+    <label asp-for="ReviewerName"></label>
+    <input asp-for="ReviewerName">
+
+    <label for="RestaurantName">Restaurant Name</label>
+    <input type="text" name="RestaurantName">
+
+    <label for="ReviewText">Review</label>
+    <textarea name="ReviewText"></textarea>
+
+    <label for="Stars">Stars</label>
+    <select name="Stars">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+
+    <label for="DateOfVisit">Date of Visit</label>
+    <input type="text" name="DateOfVisit" id="date_of_visit">
+
+    <input type="submit" value="Submit">
+</form>
